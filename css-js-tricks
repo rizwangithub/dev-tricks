@@ -1,0 +1,9 @@
+How To Debug Horizontal Scrolling Issues
+Use CSS Outline
+*, *:before, *:after {
+    outline: solid 1px #000;
+}
+
+Js 
+
+[].forEach.call(document.querySelectorAll("*"),function(a){a.style.outline="1px solid #"+(~~(Math.random()*(1<<24))).toString(16)})
